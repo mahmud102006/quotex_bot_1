@@ -1,6 +1,3 @@
-services:
-  - type: worker                # এটা web না, কারণ Telegram bot কে background এ চলতে হয়
-    name: quotex-bot
-    env: python
-    buildCommand: pip install -r requirements.txt
-    startCommand: python main.py
+Running 'python main.py'
+==> No open ports detected, continuing to scan...
+==> Docs on specifying a port: https://render.com/docs/web-services#port-binding
