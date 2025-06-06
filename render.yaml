@@ -1,10 +1,6 @@
 services:
-  - type: web
-    name: quotex-signal-bot
+  - type: worker                # এটা web না, কারণ Telegram bot কে background এ চলতে হয়
+    name: quotex-bot
     env: python
     buildCommand: pip install -r requirements.txt
     startCommand: python main.py
-    plan: free
-    envVars:
-      - key: BOTTOKEN
-        value: your-bot-token-here
