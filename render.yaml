@@ -1,3 +1,6 @@
-Running 'python main.py'
-==> No open ports detected, continuing to scan...
-==> Docs on specifying a port: https://render.com/docs/web-services#port-binding
+services:
+  - type: worker
+    name: quotex-bot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
